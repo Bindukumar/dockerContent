@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Step 3: Copy website files into Apache directory
-COPY ./website /usr/local/apache2/htdocs/
+COPY "./Case-study app" /usr/local/apache2/htdocs/
 
 # Step 4: Expose port 80
 EXPOSE 80
